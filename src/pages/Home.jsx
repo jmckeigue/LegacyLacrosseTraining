@@ -1,16 +1,23 @@
+import { NavLink } from "react-router-dom";
 import heroImage from "../assets/hero_img.png";
+import logo from "../assets/legacylacrosselogo.png";
 
 export default function Home() {
   return (
     <div className="page-container">
       {/* Header & Navigation */}
       <header className="header">
-        <h1 className="text-2xl font-bold">Legacy Lacrosse Training</h1>
+        {/* Logo (Clicking Redirects to Home) */}
+        <a href="/" className="logo-container">
+          <img src={logo} alt="Legacy Lacrosse Logo" className="logo-img" />
+          <h1 className="site-title">Legacy Lacrosse Training</h1>
+        </a>
+
         <nav className="nav-links">
-          <a href="/">Home</a>
-          <a href="/pricing">Pricing</a>
-          <a href="/booking">Book a Session</a>
-          <a href="/contact">Contact</a>
+          <NavLink to="/" className="nav-item">Home</NavLink>
+          <NavLink to="/pricing" className="nav-item">Pricing</NavLink>
+          <NavLink to="/booking" className="nav-item">Book a Session</NavLink>
+          <NavLink to="/contact" className="nav-item">Contact</NavLink>
         </nav>
       </header>
 
@@ -69,8 +76,8 @@ export default function Home() {
       <footer className="py-6 bg-primary text-white text-center">
         <p>
           Contact us at{" "}
-          <a href="mailto:your-email@example.com" className="underline">
-            your-email@example.com
+          <a href="mailto:legacylacrossetraining@gmail.com" className="underline">
+            legacylacrossetraining@gmail.com
           </a>
         </p>
       </footer>

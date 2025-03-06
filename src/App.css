@@ -45,18 +45,46 @@
   border-bottom: 4px solid #c00;
 }
 
+/* Logo Container */
+.logo-container {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+
+/* Logo Image */
+.logo-img {
+  height: 100px; /* Adjust size as needed */
+  width: auto;
+  margin-right: 30px; /* Adds spacing between logo and title */
+}
+
+/* Site Title */
+.site-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
 /* Navigation */
-.nav-links a {
-  margin-left: 1.5rem;
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-item {
   color: white;
   text-decoration: none;
-  transition: opacity 0.2s ease-in-out;
+  font-size: 20px;
+  padding-bottom: 4px;
+  transition: opacity 0.2s ease-in-out, border-bottom 0.3s ease-in-out;
 }
 
-.nav-links a:hover {
+.nav-item:hover,
+.nav-item.active {
   opacity: 0.8;
+  border-bottom: 2px solid #c00; /* Stays visible when active */
 }
-
 
 /* Testimonials Section */
 .testimonial-section {

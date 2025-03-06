@@ -53,9 +53,10 @@ body {
 .hero-container {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
+  width: 90vw;
   padding: 0rem 2rem;
-  max-width: 1200px;
+  max-width: 100%;
 }
 
 .hero-content {
@@ -78,8 +79,9 @@ body {
 
 /* Hero Image */
 .hero-image {
-  max-width: 45%;
+  max-width: 30%;
   height: auto;
+  margin-top: 2rem;
   border-radius: 10px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
   object-fit: cover;
@@ -89,13 +91,13 @@ body {
 /* Centered CTA Button */
 .hero-button-container {
   display: flex;
-  justify-content: center;
-  margin-bottom: 2rem;
+  justify-content: left;
+  margin: 2rem 2rem;
 }
 
 .hero-button {
   padding: 1rem 2rem;
-  font-size: 1.25rem;
+  font-size: 1.40rem;
   font-weight: bold;
   background-color: #e63946;
   color: white;
