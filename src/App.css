@@ -36,13 +36,13 @@
 /* Header Styling */
 .header {
   margin: 0 auto;
-  background-color: #254f9a;
+  background-color: #0d476c;
   color: white;
   padding: 1rem 2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 4px solid #c00;
+  border-bottom: 4px solid #C4122E;
 }
 
 /* Logo Container */
@@ -83,13 +83,12 @@
 .nav-item:hover,
 .nav-item.active {
   opacity: 0.8;
-  border-bottom: 2px solid #c00; /* Stays visible when active */
+  border-bottom: 2px solid #C4122E; /* Stays visible when active */
 }
 
 /* Testimonials Section */
 .testimonial-section {
   padding: 4rem 1.5rem;
-  background-color: #f7f7f7;
   text-align: center;
 }
 
@@ -115,7 +114,163 @@
   font-weight: bold;
 }
 
+/* Red Bar for Sections */
+.section-bar {
+  width: 3%;
+  height: 2px; /* Adjust height as needed */
+  background-color: #C4122E; /* Red bar */
+  margin-bottom: 1rem;
+  margin: 0 auto 1rem auto;
+  border-radius: 4px;
+}
 
+/* Section Headers */
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #213547;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.section-subtitle {
+  font-size: 1.2rem;
+  color: #555;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Reach Out Section */
+.reach-out {
+  background-color: #f8f9fa;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+  background-color: #f8f9fa;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.testimonials-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.testimonial-card {
+  max-width: 300px;
+  background-color: #a0a0a0f5;
+  color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial-author {
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+/* Reach Out Section */
+.reach-out {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.reach-out-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #0d476c;
+}
+
+.reach-out-subtitle {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+/* Form Layout */
+.reach-out-form {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+/* Full-width elements */
+.full-width {
+  grid-column: span 2;
+}
+
+/* Form Styling */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.form-group label {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  background-color: white;
+  color: black;
+}
+
+/* Ensure placeholder text is also visible */
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #777; /* Slightly gray placeholder text */
+}
+
+/* Add focus effect */
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #0d476c; /* Highlight color when focused */
+  outline: none;
+}
+
+.submit-button {
+  background-color: #0d476c;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 1rem;
+}
+
+.submit-button:hover {
+  background-color: #C4122E;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+}
 
 .card {
   padding: 2em;
