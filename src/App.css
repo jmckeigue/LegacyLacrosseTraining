@@ -53,6 +53,11 @@
   color: white;
 }
 
+.logo-container .site-title {
+  color: white;
+  pointer-events: none;
+}
+
 /* Logo Image */
 .logo-img {
   height: 100px; /* Adjust size as needed */
@@ -83,6 +88,7 @@
 .nav-item:hover,
 .nav-item.active {
   opacity: 0.8;
+  color: white;
   border-bottom: 2px solid #C4122E; /* Stays visible when active */
 }
 
@@ -263,6 +269,127 @@
 
 .submit-button:hover {
   background-color: #C4122E;
+}
+
+.book-session {
+  background-color: #ffffff;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.booking-form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.calendar-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+.react-calendar {
+  background-color: #fff;
+  border: 2px solid #C4122E;
+  border-radius: 20px;
+  font-family: inherit;
+  color: #0d476c;
+  width: 500px;
+    max-width: 100%;
+    background: white;
+    border: 1px solid #a0a096;
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    line-height: 2.025em;
+}
+
+.react-calendar__tile {
+  padding: 1rem 0.5rem;
+  font-size: 1rem;
+}
+
+.react-calendar__tile--active {
+  background: #C4122E;
+  color: #fff;
+  border-radius: 6px;
+}
+
+.react-calendar__tile--now {
+  background: #0d476c;
+  color: #fff;
+  border-radius: 6px;
+}
+
+.react-calendar__navigation button {
+  color: #0d476c;
+  font-weight: bold;
+}
+
+.react-calendar__month-view__days__day--weekend {
+  color: #C4122E;
+}
+
+.react-calendar__tile {
+  padding: 1rem 0.5rem;
+  font-size: 1rem;
+  background-color: white;
+  color: #0d476c;
+}
+
+.react-calendar__tile:hover {
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+.react-calendar__tile--now {
+  background: #0d476c;
+  color: white;
+  border-radius: 6px;
+}
+
+.react-calendar__tile--active {
+  background: #C4122E;
+  color: white;
+  border-radius: 6px;
+}
+
+/* Time Slot Styling (same as before) */
+.time-slot {
+  padding: 0.75rem 1.25rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: #f0f0f0;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.time-slot:hover {
+  background: #e0e0e0;
+}
+
+.time-slot.active {
+  background-color: #C4122E;
+  color: white;
+  border-color: #C4122E;
+}
+
+.submit-button {
+  background-color: #0d476c;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #0d476c;
 }
 
 /* Responsive Adjustments */

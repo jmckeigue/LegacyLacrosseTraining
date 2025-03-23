@@ -1,25 +1,9 @@
 import { NavLink } from "react-router-dom";
 import heroImage from "../assets/hero_img.png";
-import logo from "../assets/legacylacrosselogo.png";
 
 export default function Home() {
   return (
     <div className="page-container">
-      {/* Header & Navigation */}
-      <header className="header">
-        {/* Logo (Clicking Redirects to Home) */}
-        <a href="/" className="logo-container">
-          <img src={logo} alt="Legacy Lacrosse Logo" className="logo-img" />
-          <h1 className="site-title">Legacy Lacrosse Training</h1>
-        </a>
-
-        <nav className="nav-links">
-          <NavLink to="/" className="nav-item">Home</NavLink>
-          <NavLink to="/pricing" className="nav-item">Pricing</NavLink>
-          <NavLink to="/booking" className="nav-item">Book a Session</NavLink>
-          <NavLink to="/contact" className="nav-item">Contact</NavLink>
-        </nav>
-      </header>
 
       {/* Hero Section */}
       <section className="hero-container">
@@ -106,25 +90,28 @@ export default function Home() {
       </div>
 
       {/* Role */}
-      <div className="form-group">
-        <label htmlFor="role">I am a...</label>
-        <select id="role" name="role">
-          <option value="player">Player</option>
-          <option value="parent">Parent</option>
-          <option value="coach">Coach</option>
-          <option value="other">Other</option>
-        </select>
-      </div>
+<div className="form-group">
+  <label htmlFor="role">I am a...</label>
+  <select id="role" name="role" required defaultValue="">
+    <option value="" disabled>Select one</option>
+    <option value="player">Player</option>
+    <option value="parent">Parent</option>
+    <option value="coach">Coach</option>
+    <option value="other">Other</option>
+  </select>
+</div>
 
-      {/* Gender */}
-      <div className="form-group">
-        <label htmlFor="gender">Gender</label>
-        <select id="gender" name="gender">
-          <option value="male">Male</option>
-          <option value="female">Female</option>
-          <option value="other">Other</option>
-        </select>
-      </div>
+{/* Gender */}
+<div className="form-group">
+  <label htmlFor="gender">Gender</label>
+  <select id="gender" name="gender" required defaultValue="">
+    <option value="" disabled>Select one</option>
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+    <option value="other">Other</option>
+  </select>
+</div>
+
 
       {/* High School Grad Year (Full Width) */}
       <div className="form-group full-width">
